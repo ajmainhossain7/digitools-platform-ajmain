@@ -5,7 +5,7 @@ export default function Banner() {
   return (
     <section className="w-full">
       <div className="max-w-[1200px] mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
-        
+
         {/* LEFT CONTENT */}
         <div className="space-y-6">
 
@@ -29,7 +29,7 @@ export default function Banner() {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
-            
+
             {/* Primary Button */}
             <button className="bg-gradient-to-r from-[#5f2eea] via-[#7b2ff7] to-[#c026d3] text-white px-6 py-3 rounded-full font-medium hover:opacity-90 transition cursor-pointer">
               Explore Products

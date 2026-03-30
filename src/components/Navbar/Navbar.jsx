@@ -6,11 +6,11 @@ const Navbar = () => {
 
   return (
     <div className="w-full border-b border-gray-300">
-            <div className="max-w-[1200px] mx-auto flex items-center justify-between p-4">
+      <div className="max-w-[1200px] mx-auto flex items-center justify-between p-4">
 
-                <h1 className="text-4xl font-bold leading-normal bg-gradient-to-r from-[#5f2eea] via-[#7b2ff7] to-[#c026d3] bg-clip-text text-transparent">
-                    DigiTools
-                </h1>
+        <h1 className="text-4xl font-bold leading-normal bg-gradient-to-r from-[#5f2eea] via-[#7b2ff7] to-[#c026d3] bg-clip-text text-transparent">
+          DigiTools
+        </h1>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-8 text-gray-600 font-medium">
@@ -50,9 +50,8 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden px-4 pb-4 bg-white border-t transition-all duration-300 ${
-          open ? "block" : "hidden"
-        }`}
+        className={`md:hidden px-4 pb-4 bg-white border-t transition-all duration-300 ${open ? "block" : "hidden"
+          }`}
       >
         <ul className="flex flex-col gap-4 text-gray-700 font-medium pt-4">
           <li onClick={() => setOpen(false)}>Products</li>
