@@ -2,7 +2,7 @@ import React from 'react';
 
 const StatsSection = () => {
   return (
-    <div className="bg-gradient-to-r from-[#5f2eea] via-[#7b2ff7] to-[#c026d3] py-10">
+    <div className="bg-gradient-to-r from-[#5f2eea] via-[#7b2ff7] to-[#c026d3] py-17">
       <div className="max-w-5xl mx-auto flex justify-between items-center text-white text-center">
         
         {/* Item 1 */}
