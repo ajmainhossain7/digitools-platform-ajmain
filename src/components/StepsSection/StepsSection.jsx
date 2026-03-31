@@ -25,10 +25,10 @@ const steps = [
 
 const StepsSection = () => {
   return (
-    <div className="py-20  bg-base-200">
+    <div className="py-20 px-4 bg-base-200">
       
       <div className="text-center max-w-2xl mx-auto mb-12">
-        <h2 className="text-5xl font-bold">
+        <h2 className="text-4xl md:text-5xl font-bold">
           Get Started In 3 Steps
         </h2>
         <p className="text-base-content/60 mt-3">
