@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className="w-full border-b border-gray-300">
       <div className="max-w-[1200px] mx-auto flex items-center justify-between p-4">
 
-        <h1 className="text-4xl font-bold leading-normal bg-gradient-to-r from-[#5f2eea] via-[#7b2ff7] to-[#c026d3] bg-clip-text text-transparent">
+        <h1 className="text-4xl font-bold leading-normal bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
           DigiTools
         </h1>
 
@@ -29,7 +29,7 @@ const Navbar = () => {
             Login
           </button>
 
-          <button className="bg-gradient-to-r from-[#5f2eea] via-[#7b2ff7] to-[#c026d3] text-white px-5 py-2 rounded-full font-medium hover:opacity-90 hover:scale-105 transition-all duration-200 shadow-md hover:shadow-purple-300">
+          <button className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-5 py-2 rounded-full font-medium hover:opacity-90 hover:scale-105 transition-all duration-200 shadow-md hover:shadow-purple-300">
             Get Started
           </button>
         </div>
@@ -64,7 +64,7 @@ const Navbar = () => {
         <div className="flex flex-col gap-3 pt-4 border-t mt-4">
           <button className="text-left text-gray-600">Login</button>
 
-          <button className="bg-gradient-to-r from-[#5f2eea] via-[#7b2ff7] to-[#c026d3] text-white py-2 rounded-full font-medium hover:opacity-90 transition">
+          <button className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-2 rounded-full font-medium hover:opacity-90 transition">
             Get Started
           </button>
         </div>

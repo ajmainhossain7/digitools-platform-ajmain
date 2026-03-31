@@ -16,7 +16,7 @@ export default function Banner() {
           </div>
 
           {/* Heading */}
-          <h1 className="text-4xl md:text-5xl leading-[1.2] font-bold text-gray-800">
+          <h1 className="text-5xl md:text-6xl leading-[1.2] font-bold text-gray-800">
             Supercharge Your <br />
             Digital Workflow
           </h1>
@@ -31,7 +31,7 @@ export default function Banner() {
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
 
             {/* Primary Button */}
-            <button className="bg-gradient-to-r from-[#5f2eea] via-[#7b2ff7] to-[#c026d3] text-white px-6 py-3 rounded-full font-medium hover:opacity-90 transition cursor-pointer">
+            <button className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-3 rounded-full font-medium hover:opacity-90 transition cursor-pointer">
               Explore Products
             </button>
 

@@ -64,7 +64,7 @@ const PricingSection = () => {
             key={index}
             className={`relative rounded-2xl border p-8 shadow-sm ${
               plan.highlight
-                ? "bg-gradient-to-r from-[#5f2eea] via-[#7b2ff7] to-[#c026d3] text-white border-none scale-105"
+                ? "bg-gradient-to-r from-indigo-600 to-purple-600 text-white border-none scale-105"
                 : "bg-base-200 border-base-200"
             }`}
           >
@@ -119,7 +119,7 @@ const PricingSection = () => {
                 className={`btn w-full font-semibold rounded-full ${
                   plan.highlight
                     ? "bg-white text-purple-600 hover:bg-gray-100 border-none"
-                    : "text-white bg-gradient-to-r from-[#5f2eea] via-[#7b2ff7] to-[#c026d3]"
+                    : "text-white bg-gradient-to-r from-indigo-600 to-purple-600"
                 }`}
               >
                 {plan.button}
