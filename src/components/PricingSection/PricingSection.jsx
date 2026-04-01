@@ -62,7 +62,7 @@ const PricingSection = () => {
         {pricingPlans.map((plan, index) => (
           <div
             key={index}
-            className={`relative rounded-2xl border p-8 shadow-sm ${
+            className={`relative rounded-2xl border mt-3 p-8 shadow-sm ${
               plan.highlight
                 ? "bg-gradient-to-r from-indigo-600 to-purple-600 text-white border-none scale-105"
                 : "bg-base-200 border-base-200"

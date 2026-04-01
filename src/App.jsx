@@ -10,6 +10,7 @@ import PremiumTitle from './components/Products/PremiumTitle'
 import StepsSection from './components/StepsSection/StepsSection'
 import PricingSection from './components/PricingSection/PricingSection'
 import CTASection from './components/CTASection/CTASection'
+import Footer from './components/Footer/Footer'
 
 const getProducts = async () => {
   const res = await fetch("/products.json")
@@ -25,11 +26,11 @@ function App() {
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar cartCount={carts.length}></Navbar>
       <Banner></Banner>
       <StatsSection></StatsSection>
       <PremiumTitle></PremiumTitle>
-      {/* name of each tab group should be unique */}
+      {/* tab buttons */}
       <div className="tabs tabs-box justify-center bg-transparent mb-20">
         <input type="radio" name="my_tabs_1" className={`tab rounded-full w-40 ${activeTab === "product" ? 'bg-gradient-to-r from-indigo-600 to-purple-600 text-white' : null}`} aria-label="Products" defaultChecked
           onClick={() => setActiveTab("product")} />
@@ -42,6 +43,7 @@ function App() {
       <StepsSection></StepsSection>
       <PricingSection></PricingSection>
       <CTASection></CTASection>
+      <Footer></Footer>
       
       
     </>

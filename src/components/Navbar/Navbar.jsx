@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Menu, X, ShoppingCart } from "lucide-react";
 
-const Navbar = () => {
+const Navbar = ({ cartCount }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="w-full border-b border-gray-300">
+    <div className="w-full border-b border-gray-300 sticky top-0 z-50 bg-white">
       <div className="max-w-[1200px] mx-auto flex items-center justify-between p-4">
 
         <h1 className="text-4xl font-bold leading-normal bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
@@ -23,8 +23,14 @@ const Navbar = () => {
 
         {/* Desktop Right */}
         <div className="hidden md:flex items-center gap-5">
-          <ShoppingCart className="w-5 h-5 text-gray-600 cursor-pointer" />
-
+          <div className="relative">
+            <ShoppingCart className="w-5 h-5 text-gray-600 cursor-pointer" />
+            {cartCount > 0 && (
+              <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-1 rounded-full">
+                {cartCount}
+              </span>
+            )}
+          </div>
           <button className="text-gray-600 font-medium hover:text-black">
             Login
           </button>
@@ -36,7 +42,14 @@ const Navbar = () => {
 
         {/* Mobile Right (Cart + Burger) */}
         <div className="flex items-center gap-4 md:hidden">
-          <ShoppingCart className="w-5 h-5 text-gray-700 cursor-pointer" />
+          <div className="relative">
+            <ShoppingCart className="w-5 h-5 text-gray-600 cursor-pointer" />
+            {cartCount > 0 && (
+              <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-1 rounded-full">
+                {cartCount}
+              </span>
+            )}
+          </div>
 
           <button onClick={() => setOpen(!open)}>
             {open ? (
@@ -74,7 +87,7 @@ const Navbar = () => {
 }
 export default Navbar;
 
-// import React from "react";
+{/* // import React from "react";
 // import { ShoppingCart } from "lucide-react";
 
 // const Navbar = () => {
@@ -111,4 +124,4 @@ export default Navbar;
 //     );
 // };
 
-// export default Navbar;
+// export default Navbar; */}
